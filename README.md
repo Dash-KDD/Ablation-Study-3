@@ -17,9 +17,11 @@ In this experiment, we explore different parameter sharing mechanisms to gain fu
 
 We observe the followings:
 - [1] Partial sharing is nearly as effective as full sharing in both cases.
-- [2] Self-attention sharing, which exclusively shares the self-attention parameters, outperforms full sharing in the (n,m) = (6,2) setting. This indicates that delving deeper into the parameter sharing mechanism could hold promise for enhancing performance. We leave this as an avenue for future exploration.
+- [2] Self-attention sharing is slightly more effective than FFN-sharing, implying that more data-specific knowledge is stored in the self-attention parameters compared to the FFN parameters.
+- [3] Self-attention sharing, which exclusively shares the self-attention parameters, outperforms full sharing in the (n,m) = (6,2) setting. This indicates that delving deeper into the parameter sharing mechanism could hold promise for enhancing performance. We leave this as an avenue for future exploration.
 
 ### Summmary
 ***
-* The DASH model before shrinking exhibits slightly better performance compared to after shrinking.
+* The DASH model before shrinking exhibits slightly better performance compared to after shrinking. However, we believe it is good practice to revert to the original model since the difference is not significant, and the increased runtime might become burdensome.
+* Self-attention parameters are likely to store more data-specific knowledge compared to FFN parameters.
 * Full parameter sharing, the current baseline mechanism used in DASH, may not be the optimal sharing mechanism. Further investigation into identifying a more effective parameter sharing mechanism could be an intriguing avenue for future research.
