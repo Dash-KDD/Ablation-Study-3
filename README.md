@@ -23,5 +23,5 @@ We observe the followings:
 ### Summmary
 ***
 * The DASH model before shrinking exhibits slightly better performance compared to after shrinking. However, we believe it is good practice to revert to the original model since the difference is not significant, and the increased runtime might become burdensome.
-* Self-attention parameters are likely to store more data-specific knowledge compared to FFN parameters.
+* Self-attention parameters are likely to store more data-specific knowledge compared to FFN parameters. Exploring efficient unlearning algorithms based on this finding could be an interesting future work.
 * Full parameter sharing, the current baseline mechanism used in DASH, may not be the optimal sharing mechanism. Further investigation into identifying a more effective parameter sharing mechanism could be an intriguing avenue for future research.
