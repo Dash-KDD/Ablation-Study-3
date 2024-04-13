@@ -1,6 +1,6 @@
 ## < Effectiveness of Parameter Sharing >
 <p align="center">
-  <img src="Figs/Fig_2.png" width="400" height="400">
+  <img src="Figs/Fig_1.png" width="400" height="400">
 </p>
 
 ### Basic experiment details:
@@ -9,7 +9,7 @@
 
 ### Experiment 3.1 Comparison between DASH before and after shrinking
 ***
-We compare the overall performance of DASH before and after shrinking, and the results are summarized in Table 8 above. We notice that the model before shrinking exhibits slightly better overall NoMUS scores across both hyperparameter settings. However, considering the small difference, we advocate for shrinking the model back to the original architecture to maintain equal computational cost with the baseline.
+We compare the overall performance of DASH before and after shrinking, and the results are summarized in Table 8 above. We notice that the model before shrinking exhibits better overall NoMUS scores across both hyperparameter settings. However, given the marginal difference, we advocate for shrinking the model back to the original architecture. This approach ensures an important advantage: maintaining equal computational cost with the baseline.
 
 ### Experiment 3.2 Partial parameter sharing
 ***
