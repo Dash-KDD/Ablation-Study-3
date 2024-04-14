@@ -1,6 +1,6 @@
 ## < Effectiveness of Parameter Sharing >
 <p align="center">
-  <img src="Figs/Fig_1.png" width="400" height="400">
+  <img src="Figs/Fig_2.png" width="400" height="400">
 </p>
 
 ### Basic experiment details:
